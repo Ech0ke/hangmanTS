@@ -1,9 +1,11 @@
 import { useState } from "react";
 import words from "./data/wordList.json";
-import "./styles/appStyles.css";
+import "./styles/AppStyle.css";
+import HangmanDrawing from "./HangmanDrawing";
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
+    // return random word from word list
     return words[Math.floor(Math.random() * words.length)];
   });
 
@@ -11,6 +13,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <div className="app-text-info">lose or win</div>
+      <HangmanDrawing />
     </div>
   );
 }

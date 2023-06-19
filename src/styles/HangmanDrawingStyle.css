@@ -1,0 +1,32 @@
+.drawing-wrapper {
+  position: relative;
+}
+
+.drawing-base {
+  height: 10px;
+  width: 250px;
+  background: black;
+}
+
+.drawing-pole {
+  height: 400px;
+  width: 10px;
+  background: black;
+  margin-left: 120px;
+}
+
+.drawing-side-pole {
+  height: 10px;
+  width: 200px;
+  background: black;
+  margin-left: 120px;
+}
+
+.drawing-rope {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 10px;
+  background: black;
+}
