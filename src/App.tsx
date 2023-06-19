@@ -2,6 +2,7 @@ import { useState } from "react";
 import words from "./data/wordList.json";
 import "./styles/AppStyle.css";
 import HangmanDrawing from "./HangmanDrawing";
+import HangmanWord from "./HangmanWord";
 
 function App() {
   const [wordToGuess, setWordToGuess] = useState(() => {
@@ -14,6 +15,7 @@ function App() {
     <div className="app-wrapper">
       <div className="app-text-info">lose or win</div>
       <HangmanDrawing />
+      <HangmanWord />
     </div>
   );
 }
