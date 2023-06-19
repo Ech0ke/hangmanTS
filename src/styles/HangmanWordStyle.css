@@ -10,7 +10,7 @@
 .word-letter {
   border-bottom: 0.1em solid black;
 
-  > .word-letter-guessed {
+  .word-letter-guessed {
     visibility: hidden;
   }
 }
