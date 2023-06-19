@@ -8,15 +8,16 @@ const LEFTARM = <div className="drawing-left-arm" />;
 const RIGHTLEG = <div className="drawing-right-leg" />;
 const LEFTLEG = <div className="drawing-left-leg" />;
 
-function HangmanDrawing() {
+const BODY_PARTS = [HEAD, BODY, RIGHTARM, LEFTARM, RIGHTLEG, LEFTLEG];
+
+type HangmanDrawingProps = {
+  numberOfGuesses: number;
+};
+
+function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (
     <div className="drawing-wrapper">
-      {HEAD}
-      {BODY}
-      {RIGHTARM}
-      {LEFTARM}
-      {RIGHTLEG}
-      {LEFTLEG}
+      {BODY_PARTS.slice(0, numberOfGuesses)}
       <div className="drawing-rope" />
       <div className="drawing-side-pole" />
       <div className="drawing-pole" />
